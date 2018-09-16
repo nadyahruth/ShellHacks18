@@ -2,6 +2,7 @@
 
 <head>
     <title>Current User</title>
+
     <style>
         body{
             background: url(panther.jpg);
@@ -73,22 +74,27 @@
     <section>
         <div class="box">
             <h1>Check Out</h1>
+            <form action="thanku.html">
             <p class ="text">Panther ID</p>
-            <input type="text" name ="" placeholder="Panther ID">
+            <input type="text" name ="" placeholder="Panther ID" id="pid" required>
             <p class ="text">Item Number</p>
-            <input type="text" name ="" placeholder="Item Number">
+            <input type="text" name ="" placeholder="Item Number" required>
             <p class ="text">Item Description</p>
-            <input type="text" name ="" placeholder="Item Description">
+            <input type="text" name ="" placeholder="Item Description"required>
             <p class ="text">Phone Number</p>
-            <input type="text" name ="" placeholder="Phone Number">
+            <input type="text" name ="" placeholder="Phone Number"required>
             <br/>
-            <button class="white">Cancel</button>
-            <button class="white">Submit</button>
-
+            <button onclick="location.href='startpage.html'"class="white">Cancel</button>
+           <input class="white" type="submit" name="" placeholder="Submit" id="submit">
+            <!-- <button class="white">Cancel</button>
+            <button class="white">Submit</button> -->
+              </form>
 
         </div>
     </section>
 
+    <script src="https://ajax.googleapis.com/ajax/libs/ext-core/3.1.0/ext-core.js"></script>
+    <script src="design.js"></script>
 </body>
 
 </html>
